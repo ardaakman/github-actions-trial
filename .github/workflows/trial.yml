@@ -11,6 +11,7 @@ jobs:
                   node -v
                   npm -v
     run-windows-command:
+        needs: ["run-shell-command"]
         runs-on: windows-latest
         steps:
             - name: loc
