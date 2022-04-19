@@ -1,7 +1,5 @@
 name : Shell Commands
-
 on: [push]
-
 jobs:
     run-shell-command: 
         runs-on: ubuntu-latest
@@ -12,3 +10,11 @@ jobs:
               run: |
                   node -v
                   npm -v
+    run-windows-command:
+        runs-on: windows-latest
+        steps:
+            - name: loc
+              run: Get-Location
+            - name: dir
+              run: pwd
+              shell: bash
