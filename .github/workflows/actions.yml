@@ -5,10 +5,12 @@ jobs:
     run-github-actions:
         runs-on: ubuntu-latest
         steps:
-          - name: Print pwd
+          - name: Checkout Action
+            uses: actions/checkout@v1
+          - name: PWD
             run: |
-              ls
-              pwd
+                pwd
+                ls
           - name: Simple JS Action
             id: greet
             uses: actions/hello-world-javascript-action@v1
