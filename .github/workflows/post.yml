@@ -7,8 +7,8 @@ jobs:
     runs-on: ubuntu-latest 
     permissions:
       issues: write
-    branch:
-        [development] 
+    branches:
+        - development 
     steps:
       - name: Create issue using REST API
         run: |
