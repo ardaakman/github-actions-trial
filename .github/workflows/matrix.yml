@@ -3,15 +3,15 @@ on:
   push
 
 jobs:
-    strategy:
-      matrix:
-        os: [ubuntu-latest, windows-latest]
-    runs-on: ${{ matrix.os }}
-    steps:
-      - name: Log node node-version
-        run: node -v
-      - uses: actions/setup-node@v1
-        with: 
-          node-version: 6
-      - name: Log node node-version
-        run: node -v
+  strategy:
+    matrix:
+      os: [ubuntu-latest, windows-latest]
+  runs-on: ${{ matrix.os }}
+  steps:
+    - name: Log node node-version
+      run: node -v
+    - uses: actions/setup-node@v1
+      with: 
+        node-version: 6
+    - name: Log node node-version
+      run: node -v
