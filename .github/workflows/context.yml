@@ -29,3 +29,4 @@ jobs:
         run: | 
             echo ${HOME}
             echo ${{HOME}}
+            echo ${{env.HOME}}
