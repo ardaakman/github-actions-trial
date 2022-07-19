@@ -1,6 +1,5 @@
 name: Action Workflow
-on : 
-    repository_dispatch:
+on : [push]
     
 
 jobs:
