@@ -26,5 +26,5 @@ jobs:
         run: echo '${{ toJSON(matrix) }}'
       - name: print env Variables
         run: | 
-            echo ${{env.HOME}}
-            echo ${{env.GITHUB_WORKSPACE}}
+            echo $HOME
+            echo $GITHUB_WORKSPACE
