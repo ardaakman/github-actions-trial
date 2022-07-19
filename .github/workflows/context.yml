@@ -27,3 +27,4 @@ jobs:
       - name: print env Variables
         run: | 
             echo ${{env.HOME}}
+            echo ${{env.GITHUB_WORKSPACE}}
