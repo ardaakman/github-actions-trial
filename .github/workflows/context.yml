@@ -27,5 +27,4 @@ jobs:
         run: echo '${{ toJSON(matrix) }}'
       - name: print env Variables
         run: | 
-            echo ${{HOME}}
             echo ${{env.HOME}}
