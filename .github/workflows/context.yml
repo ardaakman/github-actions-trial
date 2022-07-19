@@ -8,13 +8,13 @@ jobs:
       - name: Dump GitHub context
         if: always()
         id: github_context_step
-        run: eccho '${{ toJSON(github) }}'
+        run: echo '${{ toJSON(github) }}'
       - name: Dump job context
         if: always()
         run: echo '${{ toJSON(job) }}'
       - name: Dump steps context
         if: always()
-        run: echoo '${{ toJSON(steps) }}'
+        run: echo '${{ toJSON(steps) }}'
       - name: Dump runner context
         if: always()
         run: echo '${{ toJSON(runner) }}'
