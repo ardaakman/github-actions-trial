@@ -28,5 +28,4 @@ jobs:
       - name: print env Variables
         run: | 
             echo ${HOME}
-            echo $HOME
             echo ${{HOME}}
